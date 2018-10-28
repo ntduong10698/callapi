@@ -78,8 +78,13 @@ export const saveTasksRequest = (task) =>{
 				dispatch(saveTask(task));
 			})
 		}
+		// else{
+		// 	return callApi(`bookings/${task.id}`,'PUT',task).then(res =>{
+		// 		dispatch(saveTask(task));
+		// 	})
+		// }
 		else{
-			return callApi(`bookings/${task.id}`,'PUT',task).then(res =>{
+			return callApi(`bookings`,'PUT',task).then(res =>{
 				dispatch(saveTask(task));
 			})
 		}

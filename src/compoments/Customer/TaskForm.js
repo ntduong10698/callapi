@@ -21,12 +21,12 @@ class TaskForm extends Component {
     this.setState({
         id: this.props.itemEditing.id,
         note: this.props.itemEditing.address,
-        customer: this.props.itemEditing.brith_date,
-        tour: this.props.itemEditing.email,
-        customer_id: this.props.itemEditing.gender,
-        tour_id: this.props.itemEditing.name,
-        category_id: this.props.itemEditing.jhi_password,
-        user_id: this.props.itemEditing.phone,
+        brith_date: this.props.itemEditing.brith_date,
+        email: this.props.itemEditing.email,
+        gender: this.props.itemEditing.gender,
+        name: this.props.itemEditing.name,
+        jhi_password: this.props.itemEditing.jhi_password,
+        phone: this.props.itemEditing.phone,
         });
     }else{
       this.onClear();
@@ -37,12 +37,12 @@ class TaskForm extends Component {
     this.setState({
         id: nextProps.itemEditing.id,
         note: nextProps.itemEditing.address,
-        customer: nextProps.itemEditing.brith_date,
-        tour: nextProps.itemEditing.email,
-        customer_id: nextProps.itemEditing.gender,
-        tour_id: nextProps.itemEditing.name,
-        category_id: nextProps.itemEditing.jhi_password,
-        user_id: nextProps.itemEditing.phone,
+        brith_date: nextProps.itemEditing.brith_date,
+        email: nextProps.itemEditing.email,
+        gender: nextProps.itemEditing.gender,
+        name: nextProps.itemEditing.name,
+        jhi_password: nextProps.itemEditing.jhi_password,
+        phone: nextProps.itemEditing.phone,
     });
     }else if(nextProps.itemEditing===null){
       this.setState({

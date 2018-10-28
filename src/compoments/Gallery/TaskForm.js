@@ -16,9 +16,9 @@ class TaskForm extends Component {
     if(this.props.itemEditing!==null){
     this.setState({
         id: this.props.itemEditing.id,
-        note: this.props.itemEditing.picture,
-        customer: this.props.itemEditing.picture_content_type,
-        tour: this.props.itemEditing.location_id
+        picture: this.props.itemEditing.picture,
+        picture_content_type: this.props.itemEditing.picture_content_type,
+        location_id: this.props.itemEditing.location_id
         });
     }else{
       this.onClear();
@@ -28,9 +28,9 @@ class TaskForm extends Component {
     if(nextProps && nextProps.itemEditing){
     this.setState({
         id: nextProps.itemEditing.id,
-        note: nextProps.itemEditing.picture,
-        customer: nextProps.itemEditing.picture_content_type,
-        tour: nextProps.itemEditing.location_id
+        picture: nextProps.itemEditing.picture,
+        picture_content_type: nextProps.itemEditing.picture_content_type,
+        location_id: nextProps.itemEditing.location_id
     });
     }else if(nextProps.itemEditing===null){
       this.setState({

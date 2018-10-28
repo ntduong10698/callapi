@@ -20,7 +20,7 @@ class TaskForm extends Component {
         comment_detail: this.props.itemEditing.comment_detail,
         customer_id: this.props.itemEditing.customer_id,
         tour_id: this.props.itemEditing.tour_id,
-        user_id: this.props.itemEditing.tour_id,
+        user_id: this.props.itemEditing.user_id,
         });
     }else{
       this.onClear();
@@ -33,7 +33,7 @@ class TaskForm extends Component {
         comment_detail: nextProps.itemEditing.comment_detail,
         customer_id: nextProps.itemEditing.customer_id,
         tour_id: nextProps.itemEditing.tour_id,
-        user_id: nextProps.itemEditing.tour_id,
+        user_id: nextProps.itemEditing.user_id,
     });
     }else if(nextProps.itemEditing===null){
       this.setState({

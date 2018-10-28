@@ -19,12 +19,12 @@ class TaskForm extends Component {
     if(this.props.itemEditing!==null){
     this.setState({
         id: this.props.itemEditing.id,
-        note: this.props.itemEditing.free_space,
-        customer: this.props.itemEditing.maximum_people,
-        tour: this.props.itemEditing.name,
-        customer_id: this.props.itemEditing.price,
-        tour_id: this.props.itemEditing.status,
-        category_id: this.props.itemEditing.vehicle_id
+        free_space: this.props.itemEditing.free_space,
+        maximum_people: this.props.itemEditing.maximum_people,
+        name: this.props.itemEditing.name,
+        price: this.props.itemEditing.price,
+        status: this.props.itemEditing.status,
+        vehicle_id: this.props.itemEditing.vehicle_id
         });
     }else{
       this.onClear();
@@ -34,12 +34,12 @@ class TaskForm extends Component {
     if(nextProps && nextProps.itemEditing){
     this.setState({
         id: nextProps.itemEditing.id,
-        note: nextProps.itemEditing.free_space,
-        customer: nextProps.itemEditing.maximum_people,
-        tour: nextProps.itemEditing.name,
-        customer_id: nextProps.itemEditing.price,
-        tour_id: nextProps.itemEditing.status,
-        category_id: nextProps.itemEditing.vehicle_id
+        free_space: nextProps.itemEditing.free_space,
+        maximum_people: nextProps.itemEditing.maximum_people,
+        name: nextProps.itemEditing.name,
+        price: nextProps.itemEditing.price,
+        status: nextProps.itemEditing.status,
+        vehicle_id: nextProps.itemEditing.vehicle_id
     });
     }else if(nextProps.itemEditing===null){
       this.setState({

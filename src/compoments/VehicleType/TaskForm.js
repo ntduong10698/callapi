@@ -15,8 +15,8 @@ class TaskForm extends Component {
     if(this.props.itemEditing!==null){
     this.setState({
         id: this.props.itemEditing.id,
-        note: this.props.itemEditing.name,
-        customer: this.props.itemEditing.price
+        name: this.props.itemEditing.name,
+        price: this.props.itemEditing.price
         });
     }else{
       this.onClear();
@@ -26,8 +26,8 @@ class TaskForm extends Component {
     if(nextProps && nextProps.itemEditing){
     this.setState({
         id: nextProps.itemEditing.id,
-        note: nextProps.itemEditing.name,
-        customer: nextProps.itemEditing.price
+        name: nextProps.itemEditing.name,
+        price: nextProps.itemEditing.price
     });
     }else if(nextProps.itemEditing===null){
       this.setState({

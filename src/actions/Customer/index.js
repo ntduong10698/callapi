@@ -79,7 +79,7 @@ export const saveTasksRequest = (task) =>{
 			})
 		}
 		else{
-			return callApi(`customers/${task.id}`,'PUT',task).then(res =>{
+			return callApi(`customers`,'PUT',task).then(res =>{
 				dispatch(saveTask(task));
 			})
 		}

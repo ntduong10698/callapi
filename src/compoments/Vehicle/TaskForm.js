@@ -17,10 +17,10 @@ class TaskForm extends Component {
     if(this.props.itemEditing!==null){
     this.setState({
         id: this.props.itemEditing.id,
-        note: this.props.itemEditing.container,
-        customer: this.props.itemEditing.name,
-        tour: this.props.itemEditing.status,
-        customer_id: this.props.itemEditing.vehicle_type_id
+        container: this.props.itemEditing.container,
+        name: this.props.itemEditing.name,
+        status: this.props.itemEditing.status,
+        vehicle_type_id: this.props.itemEditing.vehicle_type_id
         });
     }else{
       this.onClear();
@@ -30,10 +30,10 @@ class TaskForm extends Component {
     if(nextProps && nextProps.itemEditing){
     this.setState({
         id: nextProps.itemEditing.id,
-        note: nextProps.itemEditing.container,
-        customer: nextProps.itemEditing.name,
-        tour: nextProps.itemEditing.status,
-        customer_id: nextProps.itemEditing.vehicle_type_id
+        container: nextProps.itemEditing.container,
+        name: nextProps.itemEditing.name,
+        status: nextProps.itemEditing.status,
+        vehicle_type_id: nextProps.itemEditing.vehicle_type_id
     });
     }else if(nextProps.itemEditing===null){
       this.setState({

@@ -79,7 +79,7 @@ export const saveTasksRequest = (task) =>{
 			})
 		}
 		else{
-			return callApi(`rate-tours/${task.id}`,'PUT',task).then(res =>{
+			return callApi(`rate-tours`,'PUT',task).then(res =>{
 				dispatch(saveTask(task));
 			})
 		}
